@@ -1,0 +1,24 @@
+Segundo parcial 
+
+Estudiante: Kevin Rolando Tarqui Mita
+
+12. Laberinto simple
+
+La clase laberinto:
+En esta clase se define una matriz de 1 y 0 donde cada 1 representa una pared 
+La función step determina los paso validos que puede dar el agente y tambien se penaliza
+si es que el agente realiza un moviemiento ilegal con -1
+
+La clase agente
+Usa acciones posibles y calcula actualizaciones de valor con alpha, gamma y la recompensa recibida.
+El método actualizar ajusta Q según la acción tomada y el siguiente estado.
+
+Crea el entorno Laberinto() y el agente Agente().
+Ejecuta el entrenamiento por episodios (1000).
+En cada episodio:
+
+reinicia el estado, selecciona acciones usando UCB (valores_ucb), aplica la acción con env.step(),
+actualiza la tabla Q con agente.actualizar(),
+acumula la recompensa.
+UCB son las siglas en ingles de Selección de acciones con intervalo de confianza
+Guarda la recompensa total de cada episodio en historial_recompensas.
